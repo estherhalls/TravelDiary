@@ -12,6 +12,7 @@ class LogListTableViewCell: UITableViewCell {
     @IBOutlet weak var logAddressLabel: UILabel!
     @IBOutlet weak var logDateLabel: UILabel!
     
+    /// This method is called when we want to build the UI of the cell
     func configureCell(with log: Log){
        // value of title freom log assigned to text property of log name
         logNameLabel.text = log.title

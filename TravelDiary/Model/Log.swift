@@ -9,6 +9,14 @@ import Foundation
 
 // Title, Address, Date, Body
 
+/**
+Initializes a Log object - *MODEL*
+ - Properties:
+  - Title: The *Sring* identifier for the Log.
+  - Address: The *String* representation for where the user was.
+  - Date: The *Date* representation for when last logged. Defaults to the current date and time.
+  - Body: The *String* representation of what the user enjoyed about this event.
+ */
 class Log {
     
     // MARK: - Properties
@@ -19,7 +27,15 @@ class Log {
     var body: String
     
     // MARK: - Initializer
-    // date assignment creates date automatically
+    
+    /**
+         Initializes, or creates,  a Log object using the data provided
+         - Properties:
+            - logTitle: The *Sring* identifier for the Log.
+            - logAddress: The *String* representation for where the user was.
+            - logBody: The *String* representation of what the user enjoyed about this event.
+            - logDate: The *Date* representation of when this log was created. Defaults to the current date and time.
+         */
     init(title: String, address: String, logDate: Date = Date(), body: String){
         self.title = title
         self.address = address
