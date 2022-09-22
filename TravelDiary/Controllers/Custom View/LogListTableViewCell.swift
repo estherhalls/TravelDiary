@@ -12,5 +12,12 @@ class LogListTableViewCell: UITableViewCell {
     @IBOutlet weak var logAddressLabel: UILabel!
     @IBOutlet weak var logDateLabel: UILabel!
     
+    func configureCell(with log: Log){
+       // value of title freom log assigned to text property of log name
+        logNameLabel.text = log.title
+        logAddressLabel.text = log.address
+        logDateLabel.text = log.logDate.stringValue()
+    }
+    
 
 }

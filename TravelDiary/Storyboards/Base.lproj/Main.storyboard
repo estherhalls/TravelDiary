@@ -58,12 +58,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="addressTextLabel" destination="hcX-vf-tXP" id="oX5-G0-46k"/>
-                                    <outlet property="dateTextLabel" destination="grB-6O-RG5" id="bmr-fH-EgQ"/>
                                     <outlet property="logAddressLabel" destination="hcX-vf-tXP" id="IeN-Ps-Igr"/>
                                     <outlet property="logDateLabel" destination="grB-6O-RG5" id="wha-eJ-Gpg"/>
                                     <outlet property="logNameLabel" destination="qwE-N3-JSL" id="jft-62-Hlv"/>
-                                    <outlet property="nameLabelTextLabel" destination="qwE-N3-JSL" id="NKJ-Tp-kBg"/>
                                     <segue destination="9sb-Li-bA7" kind="show" identifier="toDetailVC" id="Sfx-oq-yTW"/>
                                 </connections>
                             </tableViewCell>
@@ -147,7 +144,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wAl-K8-VEU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gfV-r5-BlH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gfV-r5-BlH">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="9sb-Li-bA7" id="baZ-58-zYM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="logAddressTextField" destination="Uhp-hh-jlK" id="CPQ-Hy-R2Q"/>
