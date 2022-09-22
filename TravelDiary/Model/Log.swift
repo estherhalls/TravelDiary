@@ -29,3 +29,16 @@ class Log {
     } // End of Init
 
 } // End of Class
+
+// Extending Log function to adopt (line 35) and conform (the rest) to the equatable protocol
+// This gives logs a way to compare themselves to other logs so that we can index and delete entries in model controller
+extension Log: Equatable {
+    static func == (lhs: Log, rhs: Log) -> Bool {
+        return lhs.title == rhs.title &&
+        lhs.address == rhs.address &&
+        lhs.body == rhs.body &&
+        lhs.logDate == rhs.logDate
+    }
+    
+    
+}
