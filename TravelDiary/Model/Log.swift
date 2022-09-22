@@ -12,15 +12,20 @@ import Foundation
 class Log {
     
     // MARK: - Properties
-    
-    let title: String
-    let address: String
-    let logDate: Date
-    let body: String
+    // var if allowing user to change them
+    var title: String
+    var address: String
+    var logDate: Date
+    var body: String
     
     // MARK: - Initializer
-    init(title: String, address: String, logDate: Date, body: String){
+    // date assignment creates date automatically
+    init(title: String, address: String, logDate: Date = Date(), body: String){
+        self.title = title
+        self.address = address
+        self.logDate = logDate
+        self.body = body
         
-    }
+    } // End of Init
 
-}
+} // End of Class
