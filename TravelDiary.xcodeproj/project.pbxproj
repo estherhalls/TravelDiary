@@ -15,7 +15,9 @@
 		413AA81527273B77008D6631 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AA81427273B77008D6631 /* DateHelper.swift */; };
 		EB199C4B28DCAB5D00798FA8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB199C4A28DCAB5D00798FA8 /* Log.swift */; };
 		EB199C4D28DCAD8900798FA8 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB199C4C28DCAD8900798FA8 /* LogController.swift */; };
-		EB199C5128DCADD300798FA8 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB199C5028DCADD300798FA8 /* LogViewController.swift */; };
+		EB199C5428DCC41C00798FA8 /* LogListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB199C5328DCC41C00798FA8 /* LogListTableViewController.swift */; };
+		EB199C5628DCC43E00798FA8 /* LogListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB199C5528DCC43E00798FA8 /* LogListTableViewCell.swift */; };
+		EB199C5828DCC4D500798FA8 /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB199C5728DCC4D500798FA8 /* LogDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		413AA81427273B77008D6631 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		EB199C4A28DCAB5D00798FA8 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		EB199C4C28DCAD8900798FA8 /* LogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
-		EB199C5028DCADD300798FA8 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		EB199C5328DCC41C00798FA8 /* LogListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListTableViewController.swift; sourceTree = "<group>"; };
+		EB199C5528DCC43E00798FA8 /* LogListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListTableViewCell.swift; sourceTree = "<group>"; };
+		EB199C5728DCC4D500798FA8 /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		EB199C4E28DCAD8D00798FA8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EB199C5928DCC4F900798FA8 /* Custom View */,
 				EB199C4F28DCAD9600798FA8 /* Model Controllers */,
 				EB199C5228DCADD900798FA8 /* View Controllers */,
 			);
@@ -127,9 +132,18 @@
 		EB199C5228DCADD900798FA8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EB199C5028DCADD300798FA8 /* LogViewController.swift */,
+				EB199C5328DCC41C00798FA8 /* LogListTableViewController.swift */,
+				EB199C5728DCC4D500798FA8 /* LogDetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EB199C5928DCC4F900798FA8 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				EB199C5528DCC43E00798FA8 /* LogListTableViewCell.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +220,10 @@
 				413AA7F12724B792008D6631 /* AppDelegate.swift in Sources */,
 				413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */,
 				EB199C4D28DCAD8900798FA8 /* LogController.swift in Sources */,
-				EB199C5128DCADD300798FA8 /* LogViewController.swift in Sources */,
+				EB199C5428DCC41C00798FA8 /* LogListTableViewController.swift in Sources */,
+				EB199C5828DCC4D500798FA8 /* LogDetailViewController.swift in Sources */,
 				EB199C4B28DCAB5D00798FA8 /* Log.swift in Sources */,
+				EB199C5628DCC43E00798FA8 /* LogListTableViewCell.swift in Sources */,
 				413AA81527273B77008D6631 /* DateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

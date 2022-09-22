@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Log List Table View Controller-->
         <scene sceneID="nPN-nm-h0s">
             <objects>
-                <tableViewController id="l70-Mv-Hz0" sceneMemberID="viewController">
+                <tableViewController id="l70-Mv-Hz0" customClass="LogListTableViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="chk-S6-S3R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="logCell" rowHeight="70" id="8Rv-qJ-3Ef">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="logCell" rowHeight="70" id="8Rv-qJ-3Ef" customClass="LogListTableViewCell" customModule="TravelDiary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Rv-qJ-3Ef" id="Bv4-HZ-SeX">
@@ -60,6 +60,9 @@
                                 <connections>
                                     <outlet property="addressTextLabel" destination="hcX-vf-tXP" id="oX5-G0-46k"/>
                                     <outlet property="dateTextLabel" destination="grB-6O-RG5" id="bmr-fH-EgQ"/>
+                                    <outlet property="logAddressLabel" destination="hcX-vf-tXP" id="IeN-Ps-Igr"/>
+                                    <outlet property="logDateLabel" destination="grB-6O-RG5" id="wha-eJ-Gpg"/>
+                                    <outlet property="logNameLabel" destination="qwE-N3-JSL" id="jft-62-Hlv"/>
                                     <outlet property="nameLabelTextLabel" destination="qwE-N3-JSL" id="NKJ-Tp-kBg"/>
                                     <segue destination="9sb-Li-bA7" kind="show" identifier="toDetailVC" id="Sfx-oq-yTW"/>
                                 </connections>
@@ -82,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="1637.68115942029" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Log Detail View Controller-->
         <scene sceneID="KGq-iM-G0L">
             <objects>
-                <viewController id="9sb-Li-bA7" sceneMemberID="viewController">
+                <viewController id="9sb-Li-bA7" customClass="LogDetailViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PNb-gN-VZh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,6 +149,12 @@
                     <navigationItem key="navigationItem" id="wAl-K8-VEU">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="gfV-r5-BlH"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="logAddressTextField" destination="Uhp-hh-jlK" id="CPQ-Hy-R2Q"/>
+                        <outlet property="logBodyTextView" destination="Daw-Zq-Xig" id="jJC-ws-n8D"/>
+                        <outlet property="logDateLabel" destination="rEs-Gi-2bD" id="i17-cv-7wJ"/>
+                        <outlet property="logTitleTextField" destination="l7u-gM-WXL" id="ow5-L3-EqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7h-tU-jl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
