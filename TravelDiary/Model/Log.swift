@@ -17,7 +17,8 @@ Initializes a Log object - *MODEL*
   - Date: The *Date* representation for when last logged. Defaults to the current date and time.
   - Body: The *String* representation of what the user enjoyed about this event.
  */
-class Log {
+//(or Encoldable, Decodable), but Codable covers both
+class Log: Codable {
     
     // MARK: - Properties
     // var if allowing user to change them
